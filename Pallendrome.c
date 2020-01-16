@@ -8,12 +8,12 @@ void main(){
     gets(a);
     x = strlen(a);
     for(i=0 , j=x-1; i!=x/2; i++ , j--){
-        if(a[i] == a[j]){
+        if(a[i] != a[j]){
             f=1;
             break;
         }
     }
-    if(f == 1){
+    if(f == 0){
         printf("\nIt's A Pallendrome");
     }
     else{
